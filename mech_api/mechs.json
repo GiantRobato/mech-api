@@ -3,8 +3,32 @@
         {
             "name": "Gundam Exia",
             "anime": "Gundam 00",
-            "imgPath": "/static/imgs",
+            "imgPath": "static/Gundam00/GN-001.jpg",
             "pilot": "Setsuna F. Seiei"
+        },
+        {
+            "name": "Gundam Dynames",
+            "anime": "Gundam 00",
+            "imgPath": "static/Gundam00/GN-002.jpg",
+            "pilot": "Lyle Dylandy"
+        },
+        {
+            "name": "Gundam Kyrios",
+            "anime": "Gundam 00",
+            "imgPath": "static/Gundam00/GN-003.jpg",
+            "pilot": "Allelujah Haptism"
+        },
+        {
+            "name": "Gundam Virtue",
+            "anime": "Gundam 00",
+            "imgPath": "static/Gundam00/GN-005.jpg",
+            "pilot": "Tieria Erde"
+        },
+        {
+            "name": "Guren Mk-I",
+            "anime": "Code Geass",
+            "imgPath": "static/CodeGeass/Guren_Mk-I.jpg",
+            "pilot": "Kallen Kozuki"
         }
     ]
 }
