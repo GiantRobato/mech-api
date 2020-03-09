@@ -1,0 +1,10 @@
+{
+    "mechs": [
+        {
+            "name": "Gundam Exia",
+            "anime": "Gundam 00",
+            "imgPath": "/static/imgs",
+            "pilot": "Setsuna F. Seiei"
+        }
+    ]
+}
