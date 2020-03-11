@@ -37,6 +37,7 @@ class RandomResource(Resource):
         img_path = random.choice(mechs)['imgPath']
         return img_path
 
+# TODO: Depracate this
 @api.route('/random', defaults={'count': 1})
 @api.route('/random/<int:count>')
 class RandomResource(Resource):
@@ -50,6 +51,7 @@ class RandomResource(Resource):
 
         return img_paths
 
+# TODO: add tests for this
 # TODO: make v1/ a prefix instead of on each route, aka proper views
 @api.route('/v1/random', defaults={'count': 1})
 @api.route('/v1/random/<int:count>')
