@@ -3,9 +3,11 @@ import pathlib
 import random
 from flask import Flask, send_file
 from flask_restplus import Resource, Api
+from flask_cors import CORS
 
 
 app = Flask(__name__, static_url_path='/static')
+CORS(app)
 api = Api(app)
 app_folder = pathlib.Path(__file__).parent.absolute()
 
@@ -33,7 +35,7 @@ class RandomResource(Resource):
         """ Get a random mech
         """
         img_path = random.choice(mechs)['imgPath']
-        return send_file(img_path)
+        return img_path
 
 
 if __name__ == '__main__':
