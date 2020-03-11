@@ -1,5 +1,10 @@
 # Mech API
 
+## Run
+
+```
+$ python -m mech_api.main
+```
 
 ## Data
 
