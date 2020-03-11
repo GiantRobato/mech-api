@@ -50,5 +50,22 @@ class RandomResource(Resource):
 
         return img_paths
 
+# TODO: make v1/ a prefix instead of on each route, aka proper views
+@api.route('/v1/random', defaults={'count': 1})
+@api.route('/v1/random/<int:count>')
+class RandomMechResource(Resource):
+    def get(self, count):
+        """ Get a random mech
+        """
+        # TODO: make sure there are no duplicates
+        # TODO: error when count > number of mechs that exist
+        mech_data = [
+            random.choice(mechs)
+            for _ in range(count)
+        ]
+
+        return mech_data
+
+
 if __name__ == '__main__':
     app.run(debug=True)
