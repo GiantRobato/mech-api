@@ -37,6 +37,18 @@ class RandomResource(Resource):
         img_path = random.choice(mechs)['imgPath']
         return img_path
 
+@api.route('/random', defaults={'count': 1})
+@api.route('/random/<int:count>')
+class RandomResource(Resource):
+    def get(self, count):
+        """ Get a random mech
+        """
+        img_paths = [
+            random.choice(mechs)['imgPath']
+            for _ in range(count)
+        ]
+
+        return img_paths
 
 if __name__ == '__main__':
     app.run(debug=True)
