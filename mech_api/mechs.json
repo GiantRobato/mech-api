@@ -29,6 +29,12 @@
             "anime": "Code Geass",
             "imgPath": "static/CodeGeass/Guren_Mk-I.jpg",
             "pilot": "Kallen Kozuki"
+        },
+        {
+            "name": "KG-6 Sleipnir",
+            "anime": "Aldnoah Zero",
+            "imgPath": "static/AldnoahZero/KG-6_Sleipnir.png",
+            "pilot": "Inaho Kaizuka"
         }
     ]
 }
